@@ -20,4 +20,4 @@ line=$(head -n 1 samples.txt)
 tail -n +5 align/${line}_ReadsPerGene.out.tab | cut -f1 > tmp/geneids.txt
 sed -i '1s/^/Gene\n/' tmp/geneids.txt
 
-paste tmp/geneids.txt tmp/tmp.out > tmp/final_count_table.txt
+paste tmp/geneids.txt tmp/tmp.out > ./final_count_table.txt
